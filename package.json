@@ -2,10 +2,10 @@
   "name": "@jinyongnan810/ticketing-common",
   "version": "1.0.3",
   "description": "ticketing.com common library",
-  "main": ".\\build\\index.js",
-  "types": ".\\build\\index.d.ts",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "files": [
-    ".\\build\\**\\*"
+    "build/**/*"
   ],
   "scripts": {
     "clean-windows": "del /Q .\\build\\*",
