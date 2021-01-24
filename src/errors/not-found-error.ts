@@ -7,6 +7,6 @@ export class NotFoundError extends CustomError {
     Object.setPrototypeOf(this, NotFoundError.prototype);
   }
   serializeErrors(): { message: string; field?: string | undefined }[] {
-    return [{ message: "The pash does not exist." }];
+    return [{ message: "The path does not exist." }];
   }
 }
