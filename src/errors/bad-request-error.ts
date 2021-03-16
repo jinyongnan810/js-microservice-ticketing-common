@@ -3,7 +3,7 @@ import { CustomError } from "./custom-error";
 export class BadRequestError extends CustomError {
   statusCode: number = 400;
   constructor(public msg: string) {
-    super("Bad request error occurred.");
+    super(msg || "Bad request error occurred.");
     Object.setPrototypeOf(this, BadRequestError.prototype);
   }
   serializeErrors(): { message: string; field?: string | undefined }[] {
